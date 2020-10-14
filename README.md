@@ -4,3 +4,9 @@
   <code>framegram</code> generates cool network packet structure diagrams </br>
     <b>with ease</b>
 </p>
+
+# Instalation
+tbd
+
+# Usage
+tbd
