@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Ethernet Frame",
+        "_": [
+            { "name": "Destination MAC", "_": 48, "val": ["DE", "AD", "BE", "EF", "CC", "DD"] },
+            { "name": "Source MAC", "_": 48, "val": ["DE", "AD", "BE", "EF", "CC", "DD"] },
+            { "name": "802.1Q Header", "_": [
+                { "name": "TPID", "_": 16, "val": [ "0x8100" ] },
+                { "name": "TCI", "_": 16, "val": [ "..." ] }
+            ]},
+            { "name": "Ethertype", "_": 16, "val": ["0x8000"] }
+        ]
+    }
+]
