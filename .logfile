@@ -1,3 +1,6 @@
-   0 - eval "ve mypy framegram.py && ve pytest && ve python framegram.py --width 1440 --height 200 tests/example_diagram2.json"
-   1 - eval "ve mypy framegram.py && ve pytest && ve python framegram.py --width 600 --wrap 64 --height 200 tests/example_diagram2.json"
-   0 + InstallDependencies ve python -m pip install  .[dev,test]
+   0 + InstallDependencies ve python -m pip install -e .[dev,test]
+   0 + RunMyPy ve mypy framegram.py
+   0 + RunPyTest ve pytest
+   0 + CheckExampleDiagram ve python framegram.py --width 1440 --height 200 tests/example_diagram2.json
+   0 + Retest eval "ve mypy framegram.py && ve pytest && ve python framegram.py --width 1440 --height 200 tests/example_diagram2.json"
+   0 + Retest2 eval "ve mypy framegram.py && ve pytest && ve python framegram.py --width 600 --wrap 64 --height 200 tests/example_diagram2.json"
