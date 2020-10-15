@@ -11,7 +11,7 @@ tbd
 # Usage
 
 `framegram` uses `*.json` to specify the structure of the network packet, that
-will be shown on a diagram
+will be presented.
 
 ```json
 [
@@ -29,5 +29,13 @@ will be shown on a diagram
 }
 ]
 ```
+
+Then you can run framegram to generate packet diagram
+
+```console
+$ framegram --width 1440 --height 200 example_diagram2.json
+```
+
+And this is the result
 
 ![frame](tests/example_diagram2.png?raw=true)

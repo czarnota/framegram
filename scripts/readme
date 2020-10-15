@@ -4,8 +4,6 @@ deindent () {
     sed -E "s/^ {$1}//"
 }
 
-CODE="\`\`\`"
-
 deindent 4 <<EOF
     ![framegram logo](logo.svg?raw=true)
 
@@ -20,11 +18,19 @@ deindent 4 <<EOF
     # Usage
 
     \`framegram\` uses \`*.json\` to specify the structure of the network packet, that
-    will be shown on a diagram
+    will be presented.
 
-    ${CODE}json
+    \`\`\`json
     $(cat tests/example_diagram2.json)
-    ${CODE}
+    \`\`\`
+
+    Then you can run framegram to generate packet diagram
+
+    \`\`\`console
+    $ framegram --width 1440 --height 200 example_diagram2.json
+    \`\`\`
+
+    And this is the result
 
     ![frame](tests/example_diagram2.png?raw=true)
 EOF
