@@ -30,4 +30,4 @@ will be shown on a diagram
 ]
 ```
 
-![frame](test/example_diagram2.png?raw=true)
+![frame](tests/example_diagram2.png?raw=true)
