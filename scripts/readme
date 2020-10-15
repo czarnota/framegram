@@ -26,5 +26,5 @@ deindent 4 <<EOF
     $(cat tests/example_diagram2.json)
     ${CODE}
 
-    ![frame](test/example_diagram2.png?raw=true)
+    ![frame](tests/example_diagram2.png?raw=true)
 EOF
