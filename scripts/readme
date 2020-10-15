@@ -19,7 +19,7 @@ deindent 4 <<EOF
 
     # Usage
 
-    `framegram` uses `*.json` to specify the structure of the network packet, that
+    \`framegram\` uses \`*.json\` to specify the structure of the network packet, that
     will be shown on a diagram
 
     ${CODE}json
