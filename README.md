@@ -1,4 +1,4 @@
-![framegram logo](../blob/master/logo.svg?raw=true)
+![framegram logo](logo.svg?raw=true)
 
 <p align="center">
   <code>framegram</code> generates cool network packet structure diagrams </br>
@@ -30,4 +30,4 @@ will be shown on a diagram
 ]
 ```
 
-![frame](../blob/master/test/example_diagram2.png?raw=true)
+![frame](test/example_diagram2.png?raw=true)
