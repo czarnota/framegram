@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+deindent () {
+    sed -E "s/^ {$1}//"
+}
+
+CODE="\`\`\`"
+
+deindent 4 <<EOF
+    ![framegram logo](../blob/master/logo.svg?raw=true)
+
+    <p align="center">
+      <code>framegram</code> generates cool network packet structure diagrams </br>
+        <b>with ease</b>
+    </p>
+
+    # Instalation
+    tbd
+
+    # Usage
+
+    `framegram` uses `*.json` to specify the structure of the network packet, that
+    will be shown on a diagram
+
+    ${CODE}json
+    $(cat tests/example_diagram2.json)
+    ${CODE}
+
+    ![frame](../blob/master/test/example_diagram2.png?raw=true)
+EOF
