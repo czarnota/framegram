@@ -5,9 +5,6 @@
     <b>with ease</b>
 </p>
 
-# Instalation
-tbd
-
 # Usage
 
 `framegram` uses `*.json` to specify the structure of the network packet, that
