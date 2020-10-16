@@ -66,3 +66,9 @@ optional arguments:
   --wrap WRAP           Wrap
   --help                Print help
 ```
+
+# License
+
+`framegram` is licensed under MIT, which means you can do anything you want
+with it as long as you include the copyright notice. See [LICENSE](LICENSE)
+for details.
