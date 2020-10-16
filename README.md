@@ -5,6 +5,19 @@
     <b>with ease</b>
 </p>
 
+# Installation
+
+You can install `framegram` by running
+```console
+$ python setup.py install
+```
+
+This will make the `framegram` script available to you
+
+```console
+$ framegram --help
+```
+
 # Usage
 
 `framegram` uses `*.json` to specify the structure of the network packet, that
@@ -36,3 +49,20 @@ $ framegram --width 1440 --height 200 example_diagram2.json
 And this is the result
 
 ![frame](tests/example_diagram2.png?raw=true)
+
+Available options
+```
+$ framegram --help
+usage: framegram [-w WIDTH] [-h HEIGHT] [--wrap WRAP] [--help] file
+
+positional arguments:
+  file                  The file to render diagram from
+
+optional arguments:
+  -w WIDTH, --width WIDTH
+                        Output width
+  -h HEIGHT, --height HEIGHT
+                        Output image height
+  --wrap WRAP           Wrap
+  --help                Print help
+```

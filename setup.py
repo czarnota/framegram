@@ -21,7 +21,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     # packages=setuptools.find_packages()
-    py_modules=["main"], # main.py
+    py_modules=["framegram"],
     python_requires='>=3.6',
     install_requires=['Pillow'],
     extras_require={
@@ -33,9 +33,9 @@ setuptools.setup(
     package_data={  # Optional
          'framegram': ['ttf/*.ttf'],
     },
-    # entry_points={
-    #    'console_scripts': [
-    #        'sample=sample:main',
-    #    ],
-    #},
+    entry_points={
+        'console_scripts': [
+            'framegram=framegram:main',
+        ],
+    },
 )

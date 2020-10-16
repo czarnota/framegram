@@ -9,6 +9,7 @@ import argparse
 import io
 import json
 import pkg_resources
+import sys
 
 
 DEFAULT_W=800
@@ -95,7 +96,7 @@ class Struct:
         return Struct(name="root", children=structs)
 
 
-def parse_args():
+def get_parser():
     parser = argparse.ArgumentParser(add_help=False)
 
     parser.add_argument("-w", "--width", help="Output width", type=int,
@@ -103,8 +104,9 @@ def parse_args():
     parser.add_argument("-h", "--height", help="Output image height", type=int,
                         default=DEFAULT_H)
     parser.add_argument("--wrap", help="Wrap", type=int)
+    parser.add_argument("--help", help="Print help", action='store_true')
     parser.add_argument("file", help="The file to render diagram from")
-    return parser.parse_args()
+    return parser
 
 
 def read_struct_from_file_path(path: str) -> Tuple[dict, Struct]:
@@ -431,7 +433,14 @@ def framegram(filename: str, width: int, height: int, wrap: Optional[int]=None,
 
 
 def main():
-    args = parse_args()
+    p = get_parser()
+
+    if "--help" in sys.argv:
+        p.print_help()
+        sys.exit(0)
+
+    args = p.parse_args()
+
     framegram(args.file, args.width, args.height, wrap=args.wrap)
 
 

@@ -12,6 +12,19 @@ deindent 4 <<EOF
         <b>with ease</b>
     </p>
 
+    # Installation
+
+    You can install \`framegram\` by running
+    \`\`\`console
+    $ python setup.py install
+    \`\`\`
+
+    This will make the \`framegram\` script available to you
+
+    \`\`\`console
+    $ framegram --help
+    \`\`\`
+
     # Usage
 
     \`framegram\` uses \`*.json\` to specify the structure of the network packet, that
@@ -30,4 +43,14 @@ deindent 4 <<EOF
     And this is the result
 
     ![frame](tests/example_diagram2.png?raw=true)
+
+    Available options
+    \`\`\`
+    $ framegram --help
+EOF
+
+framegram --help
+
+deindent 4 <<EOF
+    \`\`\`
 EOF
