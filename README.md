@@ -50,7 +50,7 @@ And this is the result
 
 ![frame](tests/example_diagram2.png?raw=true)
 
-Available options
+## Available options
 ```
 $ framegram --help
 usage: framegram [-w WIDTH] [-h HEIGHT] [--wrap WRAP] [--help] file

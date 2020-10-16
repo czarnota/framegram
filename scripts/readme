@@ -44,7 +44,7 @@ deindent 4 <<EOF
 
     ![frame](tests/example_diagram2.png?raw=true)
 
-    Available options
+    ## Available options
     \`\`\`
     $ framegram --help
 EOF
